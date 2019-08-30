@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Users</title>
+</head>
+<body>
+	<% if (users.length == 0) { %>
+	<h2>No hay ningun usuario registrado hasta ahorita!</h2>
+	<p>Por favor registra uno en </p>
+	<a href="/users/registry">/users/registry</a>
+	<% } %>
+	<ul>
+	<% for (var user of users) { %>
+		<li><%= user %></li>
+	<% } %>
+	</ul>
+</body>
+</html>
