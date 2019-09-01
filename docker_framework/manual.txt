@@ -1,0 +1,3 @@
+docker build -t ldaw_php:laravel .
+
+docker run --name first_container --interactive --tty --rm --publish 8085:80 --volume ~/dev/docker/my_sites:/var/www/html/my_sites ldaw_php:laravel
