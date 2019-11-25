@@ -3,8 +3,10 @@ FROM golang:latest
 RUN apt-get -yqq update
 RUN apt-get -yqq upgrade
 
-WORKDIR /my_home
-RUN git clone https://github.com/JJOL/go-gin-start.git
-WORKDIR /my_home/go-gin-start
+WORKDIR /go/src/app
+COPY . .
 
-CMD ["go", "run", "main.go"]
+#Publicar Puerto
+EXPOSE 80
+
+CMD bash
