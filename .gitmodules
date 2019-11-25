@@ -1,0 +1,3 @@
+[submodule "docker_framework/go-gin-start"]
+	path = docker_framework/go-gin-start
+	url = https://github.com/JJOL/go-gin-start.git
