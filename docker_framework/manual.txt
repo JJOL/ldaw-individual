@@ -3,3 +3,7 @@ docker pull golang
 docker build -t ldaw_php:gogin .
 
 docker run --name first_container --interactive --tty --rm --publish 8085:80 --volume ~/tec/ldaw-individual/docker_framework/go-gin-start:/root/lookie  ldaw_php:gogin
+
+
+# Moverte CD a /root/lookie
+# Correr go main.go
